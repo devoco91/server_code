@@ -1,0 +1,305 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lasop Teacher's Daily Docs</title>
+    
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static './css/style.css' %}">
+<link rel="stylesheet" href="{% static './css/ogba.css' %}">
+<link rel="icon" type="image/x-icon" href=" {% static './images/favicon.ico.png' %}">
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'center' %}">
+            <img src="{% static './images/logo.jpg' %} " alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link user" href="{% url 'center' %}">Hello, {{request.user}}</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+              </li>
+              
+              
+            </ul>
+
+
+        
+          </div>
+        </div>
+      </nav>
+
+      
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12 ">
+
+              
+              <h5 class="cohort" style="padding-top:250px;">COHORT ID AND KEYS:</h5>
+           
+
+              
+            <table>
+           
+            <thead>
+                <tr>
+               <th class='t_head'>S/NO</th>
+               <th class='t_head'>COHORT ID</th>
+               <th class='t_head'>MEANING</th>
+            
+               
+               </tr>
+               </thead>
+
+               <tbody>
+            <tr>
+                
+                <td class='t_body'>1
+                </td>
+               
+                <td class='t_body'>LA/OG/FS/WD/1</td>
+                <td class='t_body'>Ogba Weekday Fullstack(Morning)</td>
+              
+               </tr>
+            <tr> 
+                <td class='t_body'>2
+                </td>
+               
+                <td class='t_body'>LA/OG/FS/WD/2</td>
+                <td class='t_body'>Ogba Weekday Fullstack(Afternoon)</td>
+               </tr>
+            
+            <tr> 
+                <td class='t_body'>3
+                </td>
+               
+                <td class='t_body'>LA/OG/FS/WE/1</td>
+                <td class='t_body'>Ogba Weekend Fullstack(Morning)</td>
+               </tr>
+            <tr> 
+                <td class='t_body'>4
+                </td>
+               
+                <td class='t_body'>LA/OG/FS/WE/2</td>
+                <td class='t_body'>Ogba Weekend Fullstack(Morning Extension)</td>
+               </tr>
+            <tr> 
+                <td class='t_body'>5
+                </td>
+               
+                <td class='t_body'>LA/OG/FS/WE/3</td>
+                <td class='t_body'>Ogba Weekend Fullstack(Afternoon)</td>
+               </tr>
+            <tr> 
+                <td class='t_body'>6
+                </td>
+               
+                <td class='t_body'>LA/OL/FS/WD/1</td>
+                <td class='t_body'>Olowoira Weekday Fullstack(Morning)</td>
+               </tr>
+            
+            <tr> 
+                <td class='t_body'>7
+                </td>
+               
+                <td class='t_body'>LA/OL/FS/WD/2</td>
+                <td class='t_body'>Olowoira Weekday Fullstack(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>8
+                </td>
+               
+                <td class='t_body'>LA/OL/FS/WE/1</td>
+                <td class='t_body'>Olowoira Weekend Fullstack(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>9
+                </td>
+               
+                <td class='t_body'>LA/OL/FS/WE/2</td>
+                <td class='t_body'>Olowoira Weekend Fullstack(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>10
+                </td>
+               
+                <td class='t_body'>LA/OL/DS/WD/1</td>
+                <td class='t_body'>Olowoira Weekday Data Science(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>11
+                </td>
+               
+                <td class='t_body'>LA/OL/DS/WD/2</td>
+                <td class='t_body'>Olowoira Weekday Data Science(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>12
+                </td>
+               
+                <td class='t_body'>LA/OL/DS/WE/1</td>
+                <td class='t_body'>Olowoira Weekend Data Science(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>13
+                </td>
+               
+                <td class='t_body'>LA/OL/DS/WE/2</td>
+                <td class='t_body'>Olowoira Weekend Data Science(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>14
+                </td>
+               
+                <td class='t_body'>LA/OL/IX/WD/1</td>
+                <td class='t_body'>Olowoira Weekday UI/UX(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>15
+                </td>
+               
+                <td class='t_body'>LA/OL/IX/WD/2</td>
+                <td class='t_body'>Olowoira Weekday UI/UX(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>16
+                </td>
+               
+                <td class='t_body'>LA/OL/IX/WE/1</td>
+                <td class='t_body'>Olowoira Weekend UI/UX(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>17
+                </td>
+               
+                <td class='t_body'>LA/OL/IX/WE/2</td>
+                <td class='t_body'>Olowoira Weekend UI/UX(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>18
+                </td>
+               
+                <td class='t_body'>LA/AJ/FS/WD/1</td>
+                <td class='t_body'>Ajah Weekday Fullstack(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>19
+                </td>
+               
+                <td class='t_body'>LA/AJ/FS/WD/2</td>
+                <td class='t_body'>Ajah Weekday Fullstack(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>20
+                </td>
+               
+                <td class='t_body'>LA/AJ/FS/WE/1</td>
+                <td class='t_body'>Ajah Weekend Fullstack(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>21
+                </td>
+               
+                <td class='t_body'>LA/AJ/FS/WE/2</td>
+                <td class='t_body'>Ajah Weekend Fullstack(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>22
+                </td>
+               
+                <td class='t_body'>LA/AJ/DS/WD/1</td>
+                <td class='t_body'>Ajah Weekday Data Science(Morning)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>23
+                </td>
+               
+                <td class='t_body'>LA/AJ/DS/WD/2</td>
+                <td class='t_body'>Ajah Weekday Data Science(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>24
+                </td>
+               
+                <td class='t_body'>LA/AJ/DS/WE/1</td>
+                <td class='t_body'>Ajah Weekend Data Science(Morning)</td>
+            </tr>
+            
+            <tr> 
+                <td class='t_body'>25
+                </td>
+               
+                <td class='t_body'>LA/AJ/DS/WE/2</td>
+                <td class='t_body'>Ajah Weekend Data Science(Afternoon)</td>
+            </tr>
+            <tr> 
+                <td class='t_body'>26
+                </td>
+               
+                <td class='t_body'>LA/ON</td>
+                <td class='t_body'>Lasop Online Class</td>
+            </tr>
+            
+               <tbody>
+                <table>
+                
+        <div class="herosections">
+            <h2>Good luck as you embark on you day's task</>
+
+    
+
+           <p style="font-size:25px ;"> Enter Attendance</p>
+           
+           <form action="" method="POST">
+
+            {% csrf_token %}
+           
+
+            
+                <label for="">Cohort Id</label>
+                {{form5.cohort_id}}
+                <br>
+                <div class="text">
+                <label for="">Names</label>
+                {{form5.names}}
+                </div>
+                <br>
+                <button type="submit" onclick="alert('Attendance submitted successfully')">Submit</button>
+
+          
+        </form>
+
+       
+           
+
+            
+
+
+        </div>
+             
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

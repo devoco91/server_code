@@ -1,0 +1,163 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    
+    font-family: "montserrat",sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(125deg,#6a89cc,#b8e994);
+}
+
+.navbar{
+    
+    position: fixed;
+    width: 100%;
+}
+
+
+.navbar img{
+    width: 100px;
+    height: 65px;
+}
+
+.navbar ul li{
+    margin-right: 100px;
+    /* color: red !important; */
+    text-transform: uppercase !important;
+    font-weight: bold !important;
+    
+}
+.navbar ul .user{
+    margin-right: 100px;
+    /* color: red !important; */
+    text-transform: capitalize !important;
+    font-style: italic !important;
+    
+}
+
+
+.herosections{
+    text-align: center;
+    margin-top: 250px;
+    color: #ffffff;
+}
+
+.herosections h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.herosections h2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.herosections p{
+    margin-top: 50px;
+    margin-bottom: 20px;
+	font-size: 17px;
+}
+
+.enter{ 
+    font-size: 25px;
+}
+
+
+.herosections label{
+    font-size: 20px !important;
+    display: block !important;
+    margin-bottom: 10px!important;
+  }
+  .herosections input{
+   width: 200px;
+   height: 40px;
+    margin-bottom: 10px!important;
+  }
+  .herosections textarea{
+   width: 500px !important;
+   height: 200px;
+    margin-bottom: 10px!important;
+  }
+  
+  .herosections button{
+      background-color: blue;
+      margin-bottom: 20px;
+      color: #ffffff;
+      width: 210px;
+      height: 45px;
+      font-size: 17px;
+      font-weight: bolder;
+      border: none;
+      border-radius: 5px;
+  }
+
+
+  
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .t_head,
+  .t_body {
+    border: 1px solid #ffffff !important;
+    text-align: left;
+    padding: 8px;
+    /* font-size: 32px; */
+  }
+  
+  .t_head {
+    background-color: rgb(117, 201, 250);
+  }
+  
+  .t_body {
+    background-color: rgb(205, 235, 253);
+  }
+
+  .cohort{
+    padding-top: 250px;
+  }
+
+
+  
+
+  @media(max-width:600px){
+    .text textarea{
+        width: 300px !important;
+        /* padding: 0 0 100px 200px !important; */
+    }
+  }
+  @media(max-width:500px){
+    .text textarea{
+        width: 300px !important;
+        /* padding: 0 0 100px 200px !important; */
+    }
+}
+  @media(max-width:450px){
+    .text textarea{
+        width: 300px !important;
+        /* padding: 0 0 100px 200px !important; */
+    }
+  }
+  @media(max-width:400px){
+    .text textarea{
+        width: 300px !important;
+        /* padding: 0 0 100px 200px !important; */
+    }
+  }
+
+  
+  
+  
