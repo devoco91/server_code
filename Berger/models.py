@@ -10,7 +10,7 @@ from django.db import models
 class Course_Work(models.Model):
     cohort_id=models.CharField(max_length=200, blank=True)
     topic=models.CharField(max_length=200,null=True)
-    subtopics=models.TextField(null=True)
+    subtopics=models.TextField()
     date_added=models.DateTimeField(auto_now_add=True)
 
 
